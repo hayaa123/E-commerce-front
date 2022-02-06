@@ -7,6 +7,9 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { TourOutlined } from '@mui/icons-material';
+import { Container } from '@material-ui/core';
+import List from "@material-ui/core/List"
 // const theme = createMuiTheme();
 
 
@@ -32,6 +35,25 @@ export default function header() {
         <Toolbar >
           <h1>Shop</h1>
         </Toolbar>
+      </AppBar>
+      <AppBar position="relative">
+        <Container maxWidth = "lg">
+          <Toolbar >
+            <List>
+
+            </List>
+          </Toolbar>
+        </Container>
+      </AppBar>
+
+      <AppBar position="relative">
+        <Container maxWidth = "lg">
+          <Toolbar >
+            <List>
+
+            </List>
+          </Toolbar>
+        </Container>
       </AppBar>
     </Box>
   </>;

@@ -12,14 +12,19 @@ export default function app(posts) {
     <>
       <Header />
       <Container>
-        <Grid spaacing ={2}>
+        <Grid spaacing={2}>
           {posts.posts.map((item) => {
             return (
               // eslint-disable-next-line react/jsx-key
               <Link href="">
                 <Grid item xs={6} md={3}>
                   <Card>
-                    <CardMedia />
+                    <CardMedia
+                      component="img"
+                      image={item.product_image[0].image}
+                      alt={item.product_image[0].alt_text}
+                      height="300px"
+                    />
                     <CardContent>
                       <Typography gutterBottom component="p">
                         {item.title}
@@ -34,7 +39,6 @@ export default function app(posts) {
             );
           })}
         </Grid>
-        
       </Container>
     </>
   );
